@@ -7,6 +7,7 @@ spark = SparkSession.builder.appName("MySparkApp").getOrCreate()
 spark.range(10).explain()
 spark.range(10).show()
 
+#  inferSchema=True d
 df = spark.read.csv(
     "201508_trip_data.csv",
     header=True,

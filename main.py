@@ -9,7 +9,7 @@ spark.range(10).show()
 
 #  inferSchema=True d
 df = spark.read.csv(
-    "201508_trip_data.csv",
+    "data/bike-data/201508_station_data.csv",
     header=True,
     inferSchema=True
 )
@@ -24,3 +24,5 @@ print(spark.version)
 
 # Stop the Spark session - good practice to free up resources on low-RAM machines
 spark.stop()
+
+
